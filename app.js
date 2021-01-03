@@ -1,12 +1,18 @@
 const http = require('http');
 
-const server = http.createServer((req, res)=>{
-  res.setHeader('Content-Type', 'text/html')
-  res.write('<html><head><title>My Node app</title></head><body><h1>This is my first Node app</h1></body></html>')
-  // res.write('<head><title>My Node App</title></head>')
-  // res.write('<body>This is my first Node app</body>')
-  // res.write('</html>')
-  res.end()
+const express = require('express');
+
+const app = express();
+
+app.use((req, res, next) => {
+  console.log('in the middleware');
+  next();
 })
+
+app.use((req, res, next) => {
+  res.send('<h1>Hello from express</h1>')
+})
+
+const server = http.createServer(app);
 
 server.listen(3000);
