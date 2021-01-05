@@ -2,8 +2,8 @@ const express = require('express');
 
 const router = express.Router();
 
-const productsController = require('../controllers/products')
+const errorController = require('../controllers/error')
 
-router.use(productsController.productNotFound);
+router.use(errorController.get404);
 
 module.exports = router;

@@ -15,8 +15,3 @@ exports.getProducts = (req, res, next) => {
   // res.sendFile(path.join(__dirname, '../', 'views', 'shop.html'))
   res.render('shop', {prods: products, pageTitle: 'My Shop', path: '/'})
 }
-
-exports.productNotFound = (req, res, next) => {
-  //res.status(404).sendFile(path.join(__dirname, '../', 'views', '404.html'));
-  res.status(404).render('404', {pageTitle: 'Not Found'});
-}
