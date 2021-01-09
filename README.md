@@ -21,7 +21,7 @@ Open your terminal or text editor and use next command
 
         cd my-node-app
 
-        Run 'npm install' command to install package dependencies.
+        Run 'npm install' command to install package dependencies
 
 ## Run the app
 
