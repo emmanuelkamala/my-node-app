@@ -8,7 +8,7 @@ In this project, I Will be creating an ecommerce site using NodeJs
 
 - NodeJs
 - MongoDB
-- CSS5
+- CSS3
 
 ## Live link
 coming soon...
