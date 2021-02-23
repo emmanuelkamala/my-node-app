@@ -1,12 +1,12 @@
 # Project: Building an Ecommerce App with NodeJs
 
-In this project, I Will be creating an ecommerce site using NodeJs
+In this project, I Will be creating an ecommerce site using NodeJS
 
 ![screenshot](./public/images/shop.png)<br />
 
 ## Built With
 
-- NodeJs
+- NodeJS
 - MongoDB
 - CSS3
 
